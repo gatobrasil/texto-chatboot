@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tufting Gun Brasil — Luna (Widget Oficial)</title>
+  <meta name="description" content="Embed direto do widget da ElevenLabs com o agente Luna. Sem UI extra da página.">
+  <style>
+    html, body { height:100%; margin:0; }
+    body { font-family: system-ui, -apple-system, Inter, Segoe UI, Roboto, sans-serif; background:#0f172a; color:#e5e7eb; }
+    .wrap { height:100%; display:flex; flex-direction:column; }
+    header { padding:14px 16px; text-align:center; color:#cbd5e1; font-size:14px; }
+    .embed { flex:1; display:flex; }
+    elevenlabs-convai { width:100%; height:100%; display:block; }
+    footer { text-align:center; font-size:12px; color:#94a3b8; padding:10px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>Converse com a <strong>Luna</strong>. (Se não aparecer a área de texto, ative <em>Voice + text</em> ou <em>Chat Mode</em> no painel do agente.)</header>
+    <div class="embed">
+      <!-- ✅ Embed inline: usa apenas a caixa do ElevenLabs -->
+      <elevenlabs-convai
+        agent-id="agent_1501k91dh7r5f3erpnf57rm1vttr"
+        variant="expanded"
+        override-first-message="Oi! Eu sou a Luna 🌈. Pode falar comigo ou digitar sua dúvida."
+      ></elevenlabs-convai>
+      <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+      <!-- Fim do embed -->
+    </div>
+    <footer>© 2025 Tufting Gun Brasil</footer>
+  </div>
+</body>
+</html>

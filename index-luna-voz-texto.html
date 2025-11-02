@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tufting Gun Brasil — Assistente de Voz Luna</title>
+  <meta name="description" content="Luna é a assistente de voz e texto da Tufting Gun Brasil. Tire dúvidas, monte seu kit e aprenda sobre tufting.">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, 'Inter', sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #f9fafb;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      color: #a78bfa;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #cbd5e1;
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .card {
+      background: #111827;
+      border-radius: 16px;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    footer {
+      text-align: center;
+      color: #94a3b8;
+      margin: 60px 0 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎨 Fale com a Luna</h1>
+    <p>A especialista da Tufting Gun Brasil está pronta pra te ajudar! Você pode conversar por voz ou digitar suas dúvidas logo abaixo.</p>
+  </header>
+
+  <div class="card">
+    <!-- EMBED ELEVENLABS COM MODO TEXTO + VOZ -->
+    <elevenlabs-convai 
+      agent-id="agent_1501k91dh7r5f3erpnf57rm1vttr"
+      override-first-message="Oi! Eu sou a Luna 🌈 da Tufting Gun Brasil. Quer ajuda pra escolher seu kit de tufting ideal?"
+      style="width:100%; height:500px; border-radius:16px;"
+    ></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+  </div>
+
+  <footer>© 2025 Tufting Gun Brasil — Feito com ❤ e criatividade.</footer>
+</body>
+</html>
